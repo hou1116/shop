@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+   
+        <!-- <keep-alive> -->
+          <router-view></router-view>
+          <router-view name="list"></router-view>
+
+        <!-- </keep-alive> -->
+    
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-
 export default {
   name: 'app',
-  components: {
-    Hello
+  data(){
+    return{
+    }
+  },
+  methods:{
+
+  },
+  computed:{
+   
   }
 }
 </script>
